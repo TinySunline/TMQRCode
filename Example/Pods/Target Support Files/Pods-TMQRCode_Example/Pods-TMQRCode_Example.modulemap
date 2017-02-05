@@ -1,0 +1,6 @@
+framework module Pods_TMQRCode_Example {
+  umbrella header "Pods-TMQRCode_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

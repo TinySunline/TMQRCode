@@ -1,0 +1,6 @@
+framework module TMQRCode {
+  umbrella header "TMQRCode-umbrella.h"
+
+  export *
+  module * { export * }
+}

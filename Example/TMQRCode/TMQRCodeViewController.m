@@ -7,6 +7,7 @@
 //
 
 #import "TMQRCodeViewController.h"
+#import <TMQRCode/TMQRCode.h>
 
 @interface TMQRCodeViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad
 {
+    TMQRCode *code = [[TMQRCode alloc]init];
+    code.frame = CGRectMake(0, 0, 300, 300);
+    [code performSelector:@selector(setParam: :) withObject:@"code" withObject:@"11"];
+    [self.view addSubview:code];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
